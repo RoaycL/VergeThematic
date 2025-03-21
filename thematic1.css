@@ -1,0 +1,121 @@
+/* 左侧选项卡 */
+.tab-container {
+    width: 200px; /* 固定宽度 */
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.8); /* 半透明背景 */
+}
+
+.tab-item {
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.tab-item.active {
+    background-color: #007AFF; /* 选中状态高亮 */
+}
+
+/* 中间代理信息 */
+.proxy-info {
+    flex: 1;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.proxy-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.proxy-link {
+    color: #007AFF;
+    text-decoration: none;
+}
+
+/* 右侧节点选择 */
+.node-selection {
+    width: 300px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.node-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.node-item {
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.node-item:hover {
+    background-color: #e0e0e0;
+}
+
+/* 流量统计 */
+.traffic-stats {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+
+
+/* 浅色主题 */
+@media (prefers-color-scheme: light) {
+    body {
+     background-image: url('background.png') !important; /* 浅色主题背景图 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* 降低背景透明度 */
+    }
+}
+
+/* 深色主题 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url('background.png') !important; /* 深色主题背景图 */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.8; /* 降低背景透明度 */
+    }
+}
+
+
+/* 背景图案 */
+
+
+/* 按钮和交互元素 */
+button {
+    padding: 8px 16px;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005BB5;
+}
+
+button:active {
+    background-color: #004080;
+}
